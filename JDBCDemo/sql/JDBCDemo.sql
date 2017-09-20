@@ -25,7 +25,7 @@ select * from websites;
          
 
 
-##############################JDBCDemo3 sql for mysql end#####################################
+##############################JDBCDemo3&C3P0Demo sql for mysql end#####################################
 #创建表 test_user
 
 drop table test_user;
@@ -47,4 +47,65 @@ select * from test_user;
 #没有钱六，但是可以通过SQL注入查询到所有用户的名称和密码         
 select * from test_user where username='钱六' and passwd='sfsd'or'1'= '1'; 
 
-##############################JDBCDemo3 sql for mysql end#####################################
+##############################JDBCDemo3&C3P0Demo sql for mysql end#####################################
+
+/***********C3P0Demo sql for oracle start**************/
+--创建sequence
+drop sequence seq_on_test_user;
+create sequence seq_on_test_user
+increment by 1
+start with 1
+nomaxvalue
+nocycle
+nocache;
+--创建表 test_user
+
+drop table test_user;
+create table test_user(
+ user_id int primary key not null  ,
+ username varchar(255),
+ passwd   varchar(255)
+);
+
+--插入测试数据
+insert into test_user values(seq_on_test_user.nextval,'张三','12345678');
+insert into test_user values(seq_on_test_user.nextval,'李四','23242');
+insert into test_user values(seq_on_test_user.nextval,'王五','23wer');
+commit;
+--查询数据
+select * from test_user; 
+select count(*)  countUser from test_user where username = '张三';
+/***********C3P0Demo sql for oracle end**************/
+
+
+/*********** DaoDemo sql for oracle start**************/
+--创建表
+ create table test_emp(
+        emp_id number primary key,
+        emp_name varchar2(20),
+        salary number(8,2)
+);
+--插入数据  
+     insert into test_emp(
+        emp_id,
+        emp_name,
+        salary
+     )values(
+        1,
+        'king',
+        4521
+     );
+     commit;
+     insert into test_emp(
+        emp_id,
+        emp_name,
+        salary
+     )values(
+         2,
+        'tomcat',
+         8888
+     );
+     commit;
+-- 查询数据
+	select * from test_emp;
+/***********DaoDemo sql for oracle end**************/

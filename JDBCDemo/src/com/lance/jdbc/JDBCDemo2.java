@@ -17,7 +17,7 @@ public class JDBCDemo2
 {
 	
 	//JDBC Driver & DB_URL & &DB_USERNAME,DB_PASSWD 
-	private static final String filePath = "src/com/lance/config/db.properties";
+	private static final String filePath = "src/db.properties";
 	private static String JDBC_DRIVER = null ;
 	private static String DB_URL = null ;
 	private static String DB_USERNAME = null ;

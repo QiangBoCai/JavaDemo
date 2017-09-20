@@ -13,7 +13,7 @@ public class JDBCDemo1 {
 	//JDBC Driver & DB_URL & &DB_USERNAME,DB_PASSWD 
 	
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/jdbcdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf-8&useSSL=false";
 	private static final String DB_USERNAME = "root";
 	private static final String DB_PASSWD = "we2345678";
 	
@@ -177,8 +177,8 @@ public class JDBCDemo1 {
 		
 		//JDBCQuery(DB_SQL_QUERY);
 		//JDBCUpdate(DB_SQL_ADD);
-		//JDBCQuery(DB_SQL_QUERY);
-		getMetaData(DB_SQL_QUERY);
+		JDBCQuery(DB_SQL_QUERY);
+		//getMetaData(DB_SQL_QUERY);
 		JDBCClose();
 	}
 	

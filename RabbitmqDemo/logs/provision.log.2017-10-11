@@ -1,0 +1,112 @@
+2017-10-10 17:35:37 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworld'
+2017-10-10 17:35:37 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-i5_gEPNmN0gjPIPFP2bTEg registered
+2017-10-10 17:35:37 [DEBUG] [ConsumerDemo:73] Thread-0 ret:amq.ctag-i5_gEPNmN0gjPIPFP2bTEg
+2017-10-10 17:39:53 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworld'
+2017-10-10 17:39:53 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-LKvuoNvRptrAFPlPnmVZfA registered
+2017-10-10 17:39:53 [DEBUG] [ConsumerDemo:73] Thread-0 ret:amq.ctag-LKvuoNvRptrAFPlPnmVZfA
+2017-10-10 17:40:23 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-AnpE7iIFt7EdqrDhFbsMWA registered
+2017-10-10 17:40:23 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworld'
+2017-10-10 17:40:58 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworld'
+2017-10-10 17:40:58 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-tj2mVF-xjP7GwkvpvsumCg registered
+2017-10-10 17:45:04 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworld'
+2017-10-10 17:45:04 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-WQIrZCkWYubZ45GnaBxGwg registered
+2017-10-10 17:50:18 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:50:18 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-MRogFmtSqkO5B6NhUS5j9Q registered
+2017-10-10 17:50:39 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:50:39 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-yqX2Q8reUjEOwhkScFgZeg registered
+2017-10-10 17:53:09 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:53:09 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-E0eTlm4iGzwvJHfOyjaKhw registered
+2017-10-10 17:53:09 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:53:09 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-TOUEcfQhMuM9qVu6--Xd2A registered
+2017-10-10 17:55:48 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:55:48 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-eWkw-4HmW5guaV9dE8eMwA registered
+2017-10-10 17:55:54 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 17:55:54 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-V1jAiEjaBYejspcmhXLlqg registered
+2017-10-10 17:56:47 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-7wcsJMxz-2Uc-TUqsPcjjQ registered
+2017-10-10 18:06:03 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 18:06:03 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-_jRMPWXUE-iQrrv21ckroA registered
+2017-10-10 18:06:03 [DEBUG] [ConsumerDemo:73] Thread-0 consumerName:recever
+2017-10-10 18:06:18 [INFO ] [ProducterDemo:28] main  [x] Sent 'helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld'
+2017-10-10 18:06:18 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-dFVieAdqwE9JlBaOOTeCWA registered
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:73] Thread-0 consumerName:sender
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-5 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-6 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-7 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-3 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-5 helloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-6 helloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-7 helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-3 helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-5 helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:06:18 [DEBUG] [ConsumerDemo:52] pool-3-thread-6 helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+2017-10-10 18:09:27 [DEBUG] [ProducterDemo:28] main productor endPointName:first queue
+2017-10-10 18:09:27 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:09:27 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-1U5jXGrAslxA77zQOiIDlg registered
+2017-10-10 18:09:27 [INFO ] [ProducterDemo:29] main  [x] Sent 'helloworld'
+2017-10-10 18:09:27 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 helloworld
+2017-10-10 18:10:56 [DEBUG] [ConsumerDemo:52] pool-3-thread-5 helloworld
+2017-10-10 18:10:56 [DEBUG] [ProducterDemo:28] main productor endPointName:first queue
+2017-10-10 18:10:56 [INFO ] [ProducterDemo:29] main  [x] Sent 'helloworld'
+2017-10-10 18:10:56 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-Y3FalbEStLujjPTPLOaWWA registered
+2017-10-10 18:10:56 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:11:21 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-10 18:11:21 [DEBUG] [ProducterDemo:28] main productor endPointName:first queue
+2017-10-10 18:11:21 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-STFWclNWuHPnqteNGg1xsQ registered
+2017-10-10 18:11:21 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:11:21 [INFO ] [ProducterDemo:29] main  [x] Sent 'helloworld'
+2017-10-10 18:11:45 [DEBUG] [ConsumerDemo:52] pool-3-thread-6 helloworld
+2017-10-10 18:11:45 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-10 18:11:45 [INFO ] [ConsumerDemo:44] pool-3-thread-3 Consumer amq.ctag-8kFdk__8vBFxzK91f9XcZg registered
+2017-10-10 18:11:45 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:11:45 [INFO ] [ProducterDemo:29] main  Productor Sent 'helloworld'
+2017-10-10 18:12:26 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:12:26 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-8_8kRcSndLdTZlQHGD7GSw registered
+2017-10-10 18:12:26 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-10 18:12:26 [INFO ] [ProducterDemo:29] main  Productor Sent 'helloworld'
+2017-10-10 18:12:26 [DEBUG] [ConsumerDemo:52] pool-3-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-7 Consumer,handleShutdownSignal:amq.ctag-dFVieAdqwE9JlBaOOTeCWAShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-5 Consumer,handleShutdownSignal:amq.ctag-STFWclNWuHPnqteNGg1xsQShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-5 Consumer,handleShutdownSignal:amq.ctag-Y3FalbEStLujjPTPLOaWWAShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-7 Consumer,handleShutdownSignal:amq.ctag-1U5jXGrAslxA77zQOiIDlgShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-1-thread-4 Consumer,handleShutdownSignal:amq.ctag-8_8kRcSndLdTZlQHGD7GSwShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-i5_gEPNmN0gjPIPFP2bTEgShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-eWkw-4HmW5guaV9dE8eMwAShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-AnpE7iIFt7EdqrDhFbsMWAShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-TOUEcfQhMuM9qVu6--Xd2AShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-tj2mVF-xjP7GwkvpvsumCgShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-E0eTlm4iGzwvJHfOyjaKhwShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-MRogFmtSqkO5B6NhUS5j9QShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-V1jAiEjaBYejspcmhXLlqgShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:01 [ERROR] [ConsumerDemo:64] pool-3-thread-4 Consumer,handleShutdownSignal:amq.ctag-_jRMPWXUE-iQrrv21ckroAShutdownSignalException:com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - broker forced connection closure with reason 'shutdown', class-id=0, method-id=0)
+2017-10-10 18:13:20 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:13:20 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-fnJpzVd8D7GPewQyDtlnnw registered
+2017-10-10 18:13:20 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-10 18:13:20 [INFO ] [ProducterDemo:29] main  Productor Sent 'helloworld'
+2017-10-10 18:13:20 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-10 18:13:51 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:13:51 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-_wuf9jxwOwZ7l7Ly3LkYHQ registered
+2017-10-10 18:13:51 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-10 18:13:51 [DEBUG] [ConsumerDemo:52] pool-1-thread-5 Consumer,handleDelivery msg:helloworld
+2017-10-10 18:14:50 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:
+2017-10-10 18:14:54 [DEBUG] [ConsumerDemo:52] pool-1-thread-6 Consumer,handleDelivery msg:sdas
+2017-10-10 18:15:02 [INFO ] [ConsumerDemo:33] pool-1-thread-7 Consumer,handleCancel amq.ctag-fnJpzVd8D7GPewQyDtlnnw
+2017-10-10 18:15:02 [INFO ] [ConsumerDemo:33] pool-1-thread-5 Consumer,handleCancel amq.ctag-_wuf9jxwOwZ7l7Ly3LkYHQ
+2017-10-10 18:15:08 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-10 18:15:08 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-MVvrkbi2TY4bmJwjH-Ffzw registered
+2017-10-10 18:15:08 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-10 18:15:08 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-11 09:03:33 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-8-1rz_iMU3JwcWmIxAJjew registered
+2017-10-11 09:03:33 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-11 09:03:33 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-11 09:03:33 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-11 09:04:43 [DEBUG] [ConsumerDemo:73] Thread-0  consumer endPointName:first queue
+2017-10-11 09:04:43 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-_-m5dxZ6rT4g6uOHdhnxXA registered
+2017-10-11 09:04:43 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-11 09:04:43 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:helloworld
+2017-10-11 09:05:13 [DEBUG] [ConsumerDemo:73] Thread-0  Consumer endPointName:first queue
+2017-10-11 09:05:13 [INFO ] [ConsumerDemo:44] pool-1-thread-3 Consumer amq.ctag-xPXV62znX-uxFU1rc7dd3Q registered
+2017-10-11 09:05:13 [DEBUG] [ProducterDemo:28] main Productor endPointName:first queue
+2017-10-11 09:05:13 [DEBUG] [ConsumerDemo:52] pool-1-thread-4 Consumer,handleDelivery msg:helloworld

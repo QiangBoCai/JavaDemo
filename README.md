@@ -1,3 +1,4 @@
 # JavaDemo
 
 - JDBCDemo  
+- RabbitmqDemo

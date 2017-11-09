@@ -1,4 +1,13 @@
 # JavaDemo
-
-- JDBCDemo  
+- HttpDemo
+- JDBCDemo
+- JsonDemo
+- JUnitDemo
+- Log4jDemo
 - RabbitmqDemo
+- SeleniumDemo
+- ServletDemo1
+- String&RegExpDemo
+- ThreadDemo
+- WebMagicDemo
+- XmlDemo

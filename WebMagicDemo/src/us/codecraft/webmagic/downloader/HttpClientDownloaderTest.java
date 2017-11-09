@@ -41,7 +41,7 @@ public class HttpClientDownloaderTest {
     @Test
     public void testDownloader() {
         HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
-        Html html = httpClientDownloader.download("https://www.baidu.com/");
+        Html html = httpClientDownloader.download("https://mart.coding.net/projects");
         assertTrue(!html.getFirstSourceText().isEmpty());
     }
 

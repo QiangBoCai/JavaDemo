@@ -305,11 +305,13 @@ public class Spider implements Runnable, Task {
         initComponent();
         logger.info("Spider {} started!",getUUID());
         while (!Thread.currentThread().isInterrupted() && stat.get() == STAT_RUNNING) {
+        	
             final Request request = scheduler.poll(this);
             if (request == null) {
                 if (threadPool.getThreadAlive() == 0 && exitWhenComplete) {
                     break;
                 }
+             
                 // wait until new url added
                 waitNewUrl();
             } else {
@@ -323,6 +325,7 @@ public class Spider implements Runnable, Task {
                             onError(request);
                             logger.error("process request " + request + " error", e);
                         } finally {
+                        	  
                             pageCount.incrementAndGet();
                             signalNewUrl();
                         }
@@ -410,7 +413,9 @@ public class Spider implements Runnable, Task {
     }
 
     private void onDownloadSuccess(Request request, Page page) {
+    	logger.info("onDownloadSuccess ");
         if (site.getAcceptStatCode().contains(page.getStatusCode())){
+        	
             pageProcessor.process(page);
             extractAndAddRequests(page, spawnUrl);
             if (!page.getResultItems().isSkip()) 

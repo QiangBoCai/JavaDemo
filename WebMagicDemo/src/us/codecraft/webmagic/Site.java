@@ -13,37 +13,37 @@ import java.util.*;
  */
 public class Site {
 
-    private String domain;
+    private String domain;//域名
 
-    private String userAgent;
+    private String userAgent;//用户代理
 
-    private Map<String, String> defaultCookies = new LinkedHashMap<String, String>();
+    private Map<String, String> defaultCookies = new LinkedHashMap<String, String>();//默认cookies
 
-    private Map<String, Map<String, String>> cookies = new HashMap<String, Map<String, String>>();
+    private Map<String, Map<String, String>> cookies = new HashMap<String, Map<String, String>>();//cookies
 
-    private String charset;
+    private String charset;//字符集
 
-    private int sleepTime = 5000;
+    private int sleepTime = 5000;//两个页面处理间隔时间，默认5秒
 
-    private int retryTimes = 0;
+    private int retryTimes = 0;//访问失败 ，重试次数，默认0次
 
-    private int cycleRetryTimes = 0;
+    private int cycleRetryTimes = 0;//downloader 失败，重新加入队列次数
 
-    private int retrySleepTime = 1000;
+    private int retrySleepTime = 1000;//冲洗加入队列 间隔时间
 
-    private int timeOut = 5000;
+    private int timeOut = 5000;//超时限制默认5s
 
     private static final Set<Integer> DEFAULT_STATUS_CODE_SET = new HashSet<Integer>();
 
     private Set<Integer> acceptStatCode = DEFAULT_STATUS_CODE_SET;
 
-    private Map<String, String> headers = new HashMap<String, String>();
+    private Map<String, String> headers = new HashMap<String, String>();//Request Header request.addHeader("Accept-Encoding", "gzip");
 
-    private boolean useGzip = true;
+    private boolean useGzip = true;//网页是否需要支持gzip 编码类型
 
-    private boolean disableCookieManagement = false;
+    private boolean disableCookieManagement = false;//是否禁用cookie管理
 
-    static {
+    static {// 成功访问的状态码200
         DEFAULT_STATUS_CODE_SET.add(HttpConstant.StatusCode.CODE_200);
     }
 
@@ -219,7 +219,7 @@ public class Site {
      *
      * @return the interval between the processing of two pages,
      */
-    public int getSleepTime() {
+    public int getSleepTime() {//两个页面处理间隔时间
         return sleepTime;
     }
 
@@ -322,6 +322,7 @@ public class Site {
      * @param disableCookieManagement disableCookieManagement
      * @return this
      */
+    //disableCookieManagement()// 禁用cookie管理，我们自己管理cookie
     public Site setDisableCookieManagement(boolean disableCookieManagement) {
         this.disableCookieManagement = disableCookieManagement;
         return this;

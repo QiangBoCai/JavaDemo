@@ -52,7 +52,13 @@ public class HttpClientDownloader extends AbstractDownloader {
     public void setProxyProvider(ProxyProvider proxyProvider) {
         this.proxyProvider = proxyProvider;
     }
-
+    
+    
+    /**
+     *  根据Site 获取httpClient 实例
+     * @param site
+     * @return httpClient
+     */
     private CloseableHttpClient getHttpClient(Site site) {
         if (site == null) {
             return httpClientGenerator.getClient(null);
@@ -83,7 +89,7 @@ public class HttpClientDownloader extends AbstractDownloader {
         Page page = Page.fail();
         try {
             httpResponse = httpClient.execute(requestContext.getHttpUriRequest(), requestContext.getHttpClientContext());
-            page = handleResponse(request, request.getCharset() != null ? request.getCharset() : task.getSite().getCharset(), httpResponse, task);
+              page = handleResponse(request, request.getCharset() != null ? request.getCharset() : task.getSite().getCharset(), httpResponse, task);
             onSuccess(request);
             logger.info("downloading page success {}", request.getUrl());
             return page;

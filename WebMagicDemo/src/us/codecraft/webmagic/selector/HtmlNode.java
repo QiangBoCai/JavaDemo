@@ -2,6 +2,8 @@ package us.codecraft.webmagic.selector;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +13,7 @@ import java.util.ListIterator;
  * @author code4crafer@gmail.com
  */
 public class HtmlNode extends AbstractSelectable {
-
+	Logger logger = LoggerFactory.getLogger(getClass());
     private final List<Element> elements;
 
     public HtmlNode(List<Element> elements) {
@@ -39,7 +41,10 @@ public class HtmlNode extends AbstractSelectable {
 
     @Override
     public Selectable xpath(String xpath) {
+    	logger.debug("xpath:"+xpath);
+    	
         XpathSelector xpathSelector = Selectors.xpath(xpath);
+        logger.debug("xpathSelector:"+xpathSelector);
         return selectElements(xpathSelector);
     }
 
@@ -63,8 +68,11 @@ public class HtmlNode extends AbstractSelectable {
      * @return result
      */
     protected Selectable selectElements(BaseElementSelector elementSelector) {
+    	 logger.debug("selectElements:"+elementSelector);
         ListIterator<Element> elementIterator = getElements().listIterator();
+        logger.debug("elementSelector.hasAttribute():"+elementSelector.hasAttribute());
         if (!elementSelector.hasAttribute()) {
+        	
             List<Element> resultElements = new ArrayList<Element>();
             while (elementIterator.hasNext()) {
                 Element element = checkElementAndConvert(elementIterator);
@@ -75,11 +83,17 @@ public class HtmlNode extends AbstractSelectable {
         } else {
             // has attribute, consider as plaintext
             List<String> resultStrings = new ArrayList<String>();
+            logger.debug("elementIterator.hasNext():"+elementIterator.hasNext());
             while (elementIterator.hasNext()) {
+            
                 Element element = checkElementAndConvert(elementIterator);
+            	logger.debug("element data():"+element.data()
+            			+"\n baseUri"+element.baseUri()
+            			+"html"+element.html());
                 List<String> selectList = elementSelector.selectList(element);
                 resultStrings.addAll(selectList);
             }
+            logger.debug("resultStrings:"+resultStrings);
             return new PlainText(resultStrings);
 
         }

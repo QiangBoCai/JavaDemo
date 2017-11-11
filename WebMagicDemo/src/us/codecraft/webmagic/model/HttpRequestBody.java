@@ -84,6 +84,12 @@ public class HttpRequestBody implements Serializable {
         return new HttpRequestBody(body, contentType, encoding);
     }
 
+    /**
+     * 通过Map 返回表单 形式的HttpRequestBody
+     * @param params
+     * @param encoding
+     * @return
+     */
     public static HttpRequestBody form(Map<String,Object> params, String encoding){
         List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(params.size());
         for (Map.Entry<String, Object> entry : params.entrySet()) {

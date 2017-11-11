@@ -12,7 +12,11 @@ public class GithubRepoPageProcessor implements PageProcessor{
 	//Logger logger = Logger.getLogger(GithubRepoPageProcessor.class);
 	 protected Logger logger = LoggerFactory.getLogger(getClass());
 	//1.爬虫相关配置，eg:编码，抓取间隔，重试次数等
-	private Site site = Site.me().setRetryTimes(3).setSleepTime(1000).setTimeOut(10000);
+	private Site site = Site.me()
+						.setRetryTimes(3)
+						.setSleepTime(1000)
+						.setTimeOut(10000)
+						.addHeader("Accept-Encoding", "gzip, deflate");
 	
 	@Override
 	public Site getSite() 

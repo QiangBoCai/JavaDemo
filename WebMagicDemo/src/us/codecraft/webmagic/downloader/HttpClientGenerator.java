@@ -29,8 +29,7 @@ import java.security.cert.X509Certificate;
 import java.util.Map;
 
 /**
- * @author code4crafter@gmail.com <br>
- * @since 0.4.0
+ * 辅助类：HttpClientGenerator。负责生成HttpClient实例。
  */
 public class HttpClientGenerator {
 	

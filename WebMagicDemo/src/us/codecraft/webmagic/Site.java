@@ -12,36 +12,35 @@ import java.util.*;
  * @since 0.1.0
  */
 public class Site {
-
-    private String domain;//域名
-
-    private String userAgent;//用户代理
-
-    private Map<String, String> defaultCookies = new LinkedHashMap<String, String>();//默认cookies
-
-    private Map<String, Map<String, String>> cookies = new HashMap<String, Map<String, String>>();//cookies
-
-    private String charset;//字符集
-
-    private int sleepTime = 5000;//两个页面处理间隔时间，默认5秒
-
-    private int retryTimes = 0;//访问失败 ，重试次数，默认0次
-
-    private int cycleRetryTimes = 0;//downloader 失败，重新加入队列次数
-
-    private int retrySleepTime = 1000;//冲洗加入队列 间隔时间
-
-    private int timeOut = 5000;//超时限制默认5s
-
+	//域名
+    private String domain;
+  //用户代理
+    private String userAgent;
+  //默认cookies
+    private Map<String, String> defaultCookies = new LinkedHashMap<String, String>();
+   //cookies
+    private Map<String, Map<String, String>> cookies = new HashMap<String, Map<String, String>>();
+   //字符集
+    private String charset;
+   //两个页面处理间隔时间，默认5秒
+    private int sleepTime = 5000;
+   //访问失败 ，重试次数，默认0次
+    private int retryTimes = 0;
+   //下载失败，默认重新加入队列次数
+    private int cycleRetryTimes = 0;
+   //重新加入队列 间隔时间
+    private int retrySleepTime = 1000;
+    //超时限制默认5s
+    private int timeOut = 5000;
+  
+    //允许接受的响应状态码
     private static final Set<Integer> DEFAULT_STATUS_CODE_SET = new HashSet<Integer>();
-
     private Set<Integer> acceptStatCode = DEFAULT_STATUS_CODE_SET;
-
-    private Map<String, String> headers = new HashMap<String, String>();//Request Header request.addHeader("Accept-Encoding", "gzip");
-
+	 //请求头 Request Header eg:request.addHeader("Accept-Encoding", "gzip"); 
+    private Map<String, String> headers = new HashMap<String, String>();
     private boolean useGzip = true;//网页是否需要支持gzip 编码类型
-
-    private boolean disableCookieManagement = false;//是否禁用cookie管理
+    //是否禁用cookie管理
+    private boolean disableCookieManagement = false;
 
     static {// 成功访问的状态码200
         DEFAULT_STATUS_CODE_SET.add(HttpConstant.StatusCode.CODE_200);

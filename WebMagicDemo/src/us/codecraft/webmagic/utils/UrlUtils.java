@@ -21,6 +21,7 @@ import java.util.regex.Pattern;
 public class UrlUtils {
 
     /**
+     * 规范Url
      * canonicalizeUrl
      * <br>
      * Borrowed from Jsoup.

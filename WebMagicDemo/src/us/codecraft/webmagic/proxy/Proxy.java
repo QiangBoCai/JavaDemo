@@ -1,21 +1,36 @@
 package us.codecraft.webmagic.proxy;
 
 /**
- * 
+ * IP 代理 实体类
  */
 
 public class Proxy {
 
-	private String host;
-	private int port;
-	private String username;
-	private String password;
+	private String host; //IP host
+	private int port;//IP 端口
+	private String username; //用户名
+	private String password; //密码
 
+	
+	/***
+	 * 
+	 * Proxy IP代理 构造函数
+	 * @param host
+	 * @param port
+	 */
 	public Proxy(String host, int port) {
 		this.host = host;
 		this.port = port;
 	}
 
+	/**
+	 * 
+	 * Proxy IP代理构造函数，含用户名，密码
+	 * @param host
+	 * @param port
+	 * @param username
+	 * @param password
+	 */
 	public Proxy(String host, int port, String username, String password) {
 		this.host = host;
 		this.port = port;
@@ -23,6 +38,7 @@ public class Proxy {
 		this.password = password;
 	}
 
+	
 	public String getHost() {
 		return host;
 	}
@@ -39,6 +55,7 @@ public class Proxy {
 		return password;
 	}
 
+	
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;

@@ -22,15 +22,19 @@ import java.util.Map;
  * {@link #getResultItems()} get extract results to be used in {@link us.codecraft.webmagic.pipeline.Pipeline}<br>
  * {@link #addTargetRequests(java.util.List)} {@link #addTargetRequest(String)} add urls to fetch                 <br>
  *
- * @author code4crafter@gmail.com <br>
- * @see us.codecraft.webmagic.downloader.Downloader
- * @see us.codecraft.webmagic.processor.PageProcessor
- * @since 0.1.0
+ *Page实体，是对Response 响应的封装
+ *主要包括:
+ *Request 请求
+ *ResultItems 解析结果
+ * 
+ *Page的Html形式
+ *
  */
 public class Page {
 
+	//请求
     private Request request;
-
+    //
     private ResultItems resultItems = new ResultItems();
 
     private Html html;

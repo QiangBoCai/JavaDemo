@@ -8,34 +8,42 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Object contains url to crawl.<br>
- * It contains some additional information.<br>
+ *Request 是对请求 Url 目标的封装
+ * 也包含以下其他信息
+ *  Method 请求方法 
+ *  httpRequestBody ,请求消息内容
+ *  extras 额外消息
+ *  headers 消息头
+ *  cookies 
+ *  priority 优先级
  *
- * @author code4crafter@gmail.com <br>
- * @since 0.1.0
  */
 public class Request implements Serializable {
 
     private static final long serialVersionUID = 2062192774891352043L;
-
     public static final String CYCLE_TRIED_TIMES = "_cycle_tried_times";
-
+    //网站
     private String url;
-
+    //访问方法
     private String method;
 
+    //请求消息体
     private HttpRequestBody requestBody;
 
+    //存储附加信息  eg:CYCLE_TRIED_TIMES
     /**
+     * 
      * Store additional information in extras.
      */
     private Map<String, Object> extras;
-
+    
+    // 如果没有设置Site的cookies，使用当前url的cookies
     /**
      * cookies for current url, if not set use Site's cookies
      */
     private Map<String, String> cookies = new HashMap<String, String>();
 
+    // 请求消息头
     private Map<String, String> headers = new HashMap<String, String>();
 
     /**
@@ -43,14 +51,17 @@ public class Request implements Serializable {
      * The bigger will be processed earlier. <br>
      * @see us.codecraft.webmagic.scheduler.PriorityScheduler
      */
+    //消息处理的优先级
     private long priority;
 
     /**
      * When it is set to TRUE, the downloader will not try to parse response body to text.
      *
      */
+    //是否将响应的消息体解析格式化的rawText内容，即带charset的String，默认false，表示需要
+    
     private boolean binaryContent = false;
-
+    //编码
     private String charset;
 
     public Request() {
@@ -112,10 +123,8 @@ public class Request implements Serializable {
     }
 
     /**
+     * 默认请求方法 get
      * The http method of the request. Get for default.
-     * @return httpMethod
-     * @see us.codecraft.webmagic.utils.HttpConstant.Method
-     * @since 0.5.0
      */
     public String getMethod() {
         return method;

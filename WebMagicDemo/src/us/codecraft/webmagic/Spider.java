@@ -433,7 +433,7 @@ public class Spider implements Runnable, Task {
     }
 
     private void onDownloaderFail(Request request) {
-        if (site.getCycleRetryTimes() == 0) {
+        if (site.getCycleRetryTimes() == 0) {//默认重复次数为0
             sleep(site.getSleepTime());
         } else {
             // for cycle retry
@@ -443,12 +443,15 @@ public class Spider implements Runnable, Task {
 
     private void doCycleRetry(Request request) {
         Object cycleTriedTimesObject = request.getExtra(Request.CYCLE_TRIED_TIMES);
+        //判断CYCLE_TRIED_TIMES 是否为null，不为null，循环重试次数+1，为null，重试1次
         if (cycleTriedTimesObject == null) {
             addRequest(SerializationUtils.clone(request).setPriority(0).putExtra(Request.CYCLE_TRIED_TIMES, 1));
         } else {
             int cycleTriedTimes = (Integer) cycleTriedTimesObject;
+         
             cycleTriedTimes++;
             if (cycleTriedTimes < site.getCycleRetryTimes()) {
+            	//判断是否超过最大允许值
                 addRequest(SerializationUtils.clone(request).setPriority(0).putExtra(Request.CYCLE_TRIED_TIMES, cycleTriedTimes));
             }
         }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mcms"
+  id="myeclipse.1511156900926"
+  context-root="/mcms"
+  j2ee-spec="6.0"
+  archive="mcms.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

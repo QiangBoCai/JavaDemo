@@ -12,5 +12,3 @@
 - ServletDemo1
 - String&RegExpDemo
 - ThreadDemo
-- WebMagicDemo
-- mcms

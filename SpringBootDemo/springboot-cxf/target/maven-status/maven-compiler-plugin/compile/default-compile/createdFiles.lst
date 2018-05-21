@@ -1,0 +1,15 @@
+com\lance\webservice\ICommonService.class
+com\lance\utils\HttpClientSoapUtil.class
+com\lance\webservice\CommonServiceImpl.class
+com\lance\webservice\IMobile263Service.class
+com\lance\pojo\User.class
+com\lance\client\CXFClient.class
+com\lance\controller\HelloWorldController.class
+com\lance\pojo\ReqMessage.class
+com\lance\webservice\IUserService.class
+com\lance\SpringBootCXFApplication.class
+com\lance\client\HttpClientTest.class
+com\lance\webservice\UserServiceImpl.class
+com\lance\pojo\RspMessage.class
+com\lance\webservice\Mobile263ServiceImpl.class
+com\lance\config\CXFConfig.class
